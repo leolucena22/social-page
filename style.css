@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+:root {
+    --font: 'roboto';
+    --cor: rgb(57, 224, 65);
+    --cor2: #222831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, ul, li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    color: #fff;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--font);
+    background-color: var(--cor2);
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+}
+
+.box {
+    padding: 20px 0;
+    box-shadow: 2px 5px 100px 2px var(--cor);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+img {
+    width: 100px;
+    border-radius: 50px;
+}
+
+.infos {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.infos h1 {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.infos h2 {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.infos p {
+    letter-spacing: 0.1rem;
+    color: var(--cor);
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px 0;
+}
+
+.link {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background-color: var(--cor);
+    text-align: center;
+    border: 2px var(--cor) solid;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+.link i {
+    margin-right: 10px;
+}
+
+.link a {
+    font-size: 0.5rem;
+}
+
+.link:hover {
+    background-color: #fff;
+    color: var(--cor);
+}
+
+.social {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social a {
+    color: var(--cor);
+    font-size: 2rem;
+}
+
+.organizador {
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width:600px) {
+    .infos h1 {
+        font-size: 1rem;
+    }
+
+    .infos h2 {
+        font-size: 0.8rem;
+    }
+
+    .infos p {
+        font-size: 0.8rem;
+    }
+}
+
+
